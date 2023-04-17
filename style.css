@@ -1,0 +1,16 @@
+/* main styles */
+@import "src/css/colors.css";
+@import "src/css/typography.css";
+
+/*main pages*/
+@import "src/css/index.css";
+@import "src/css/about.css";
+@import "src/css/careers-home.css";
+@import "src/css/inspiration-home.css";
+@import "src/css/resources.css";
+@import "src/css/quiz.css";
+
+/*sub pages*/
+@import "src/css/career-page.css";
+@import "src/css/insp-page.css";
+
