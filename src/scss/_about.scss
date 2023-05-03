@@ -1,0 +1,127 @@
+.page-about {
+    .hero {
+        display: flex;
+        padding: 0rem;
+
+        &--copy {
+            width: 50%;
+            background-color: $color-black;
+            padding-top: 3rem;
+            padding-bottom: 4rem;
+        }
+
+        h1, p {
+            text-align: left;
+            margin-left: 7rem;
+        }
+
+        img {
+            width: 50%;
+        }
+
+    }
+
+    .help {
+        padding-bottom: 5rem;
+
+        h2 {
+            color: $color-accent;
+            text-align: center;
+            padding-top: 3rem;
+            padding-bottom: 2rem;
+        }
+
+        ul {
+            display: flex;
+            width: 90%;
+            margin: 0 auto;
+            justify-content: space-around;
+
+            li {
+                width: 20%;
+            }
+
+            img {
+                margin: 0 auto;
+                display: block;
+            }
+
+            h3 {
+                color: $color-accent;
+                text-align: center;
+            }
+
+
+            p {
+                text-align: center;
+            }
+        }
+
+    }
+
+    .backstory {
+        display: flex;
+        margin-bottom: 6rem;
+        background-color: $color-primary;
+        justify-content: space-between;
+
+        img {
+            width: 50%;
+            display: block;
+        }
+
+        &--copy {
+            width: 45%;
+            padding: 3rem 3rem 5rem 0rem;
+        }
+    }
+
+    .contact {
+        width: 60%;
+        padding: 5rem;
+        background-color: $color-hyperlink;
+        border-radius: 97px 97px 0 0;
+        margin: 0 auto;
+
+        h2 {
+            text-align: center;
+            width: 60%;
+            margin: 5rem auto;
+        }
+        
+        label {
+            text-align: left;
+            display: block;
+            margin-bottom: 1.5rem; 
+            font-weight: 700;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            display: block; 
+            width: 100%; 
+            padding: 1rem; 
+            border-radius: 10px; 
+            box-sizing: border-box; 
+            margin-bottom: 2.5rem; 
+            color: $color-black;
+        }
+        
+        button[type="submit"] {
+            background-color: transparent; 
+            color: $color-white; 
+            border: none; 
+            padding: 1.5rem 5rem; 
+            border-radius: 47px; 
+            border: 5px solid $color-white; 
+            cursor: pointer; 
+        }
+        
+        button[type="submit"]:hover {
+            background-color: $color-white;
+            color: $color-hyperlink;
+        }
+      }
+      
+}

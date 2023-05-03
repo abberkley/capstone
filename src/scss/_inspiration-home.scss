@@ -1,0 +1,77 @@
+.page-inspiration {
+    .hero {
+
+        padding-left: 5rem;
+
+        h1, p {
+            width: 70%;
+            text-align: left;
+            margin-left: 0;
+        }
+        
+    }
+
+    .tech {
+        background-color: $color-tech;
+    }
+
+    .science {
+        background-color: $color-science;
+        p, h2 {
+            text-align: right;
+        }
+    }
+
+    .math {
+        background-color: $color-math;
+    }
+
+    .person {
+
+        a {
+            cursor: pointer;
+
+            &:hover {
+                opacity: .9%;
+            }
+        }
+
+        &--item {
+            display: flex;
+            justify-content: space-between;
+            justify-items: flex-end;
+            padding: 9.6rem;
+            padding-bottom: 0;
+
+            .image {
+                width: 35%;
+            }
+    
+            img {
+                margin-top: 3.5rem;
+                height: auto;
+                max-width: 100%;
+                
+            }
+    
+            h2 {
+                color: $color-black;
+                margin-top: 1rem;
+            }
+    
+            .h3, p {
+                color: $color-black;
+                line-height: 3rem;
+                margin-bottom: 1rem;
+            }
+    
+        }
+
+        &--content {
+            width: 60%;
+            margin-top: 4rem;
+        }
+
+    }
+
+}

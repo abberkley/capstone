@@ -1,1 +1,703 @@
-/*# sourceMappingURL=main.css.map */
+/* sub brand colors */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&family=Poppins:wght@600;700&display=swap");
+body, a, p, input[type=text],
+input[type=email],
+textarea, button, li {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: #FCF6F5;
+}
+
+h1 {
+  font-family: "Open Sans";
+  font-weight: 800;
+  font-size: 5.4rem;
+  line-height: 5rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: #FCF6F5;
+}
+
+h2, .h2 {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 4rem;
+  text-transform: capitalize;
+  color: #FCF6F5;
+}
+
+h3, .h3 {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.5rem;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.4rem;
+  line-height: 4rem;
+}
+
+.nav-links--item, a, .hyperlink {
+  text-transform: lowercase;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.subtitle, form label {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  text-align: center;
+}
+
+.hero {
+  background: linear-gradient(357.81deg, #141212 10.18%, #CD5B9C 57.97%);
+  padding-top: 6.9rem;
+  padding-bottom: 11rem;
+  transition: all 0.2s;
+}
+.hero h1 {
+  width: 50%;
+  margin: 0 auto;
+}
+.hero p.subtitle {
+  width: 40%;
+  margin: 3rem auto;
+}
+
+.stem-intro {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto 16rem;
+}
+.stem-intro .stem--content {
+  margin-top: 8rem;
+  width: 40%;
+  margin-left: 9rem;
+}
+.stem-intro .stem--decor {
+  width: 40%;
+}
+.stem-intro .dot {
+  position: relative;
+  bottom: 10%;
+  left: 40%;
+  z-index: -1;
+}
+
+.stem-categories {
+  display: flex;
+  justify-content: space-evenly;
+}
+.stem-categories h3 {
+  text-align: center;
+}
+.stem-categories--science {
+  background-color: #115EA7;
+  width: 25%;
+  padding: 25rem 1rem;
+}
+.stem-categories--tech {
+  background-color: #2DC0CF;
+  width: 25%;
+  padding: 25rem 1rem;
+}
+.stem-categories--engineering {
+  background-color: #65439A;
+  width: 25%;
+  padding: 25rem 1rem;
+}
+.stem-categories--math {
+  background-color: #EB3590;
+  width: 25%;
+  padding: 25rem 1rem;
+}
+
+.quiz-cta {
+  text-align: center;
+  margin: 13.1rem auto 10.7rem;
+}
+.quiz-cta h2 {
+  margin-bottom: 5rem;
+}
+
+.resources {
+  background: #A867C7;
+  display: flex;
+  justify-content: space-between;
+  padding: 13.2rem 5rem 22rem;
+}
+.resources--decor {
+  width: 25%;
+}
+.resources--decor .dot {
+  position: relative;
+  left: 0;
+}
+.resources--decor .dot__blue {
+  left: -50%;
+  top: -10%;
+  padding: 15rem;
+}
+.resources--decor .dot__pink {
+  left: 0%;
+}
+.resources--content {
+  width: 60%;
+}
+.resources--content h2 {
+  width: 70%;
+}
+.resources--content a {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  justify-items: baseline;
+}
+
+.mission {
+  background: #CD5B9C;
+  text-align: center;
+  padding-top: 8rem;
+  padding-bottom: 10rem;
+}
+.mission p {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.page-about .hero {
+  display: flex;
+  padding: 0rem;
+}
+.page-about .hero--copy {
+  width: 50%;
+  background-color: #141212;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+.page-about .hero h1, .page-about .hero p {
+  text-align: left;
+  margin-left: 7rem;
+}
+.page-about .hero img {
+  width: 50%;
+}
+.page-about .help {
+  padding-bottom: 5rem;
+}
+.page-about .help h2 {
+  color: #A867C7;
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+.page-about .help ul {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+.page-about .help ul li {
+  width: 20%;
+}
+.page-about .help ul img {
+  margin: 0 auto;
+  display: block;
+}
+.page-about .help ul h3 {
+  color: #A867C7;
+  text-align: center;
+}
+.page-about .help ul p {
+  text-align: center;
+}
+.page-about .backstory {
+  display: flex;
+  margin-bottom: 6rem;
+  background-color: #CD5B9C;
+  justify-content: space-between;
+}
+.page-about .backstory img {
+  width: 50%;
+  display: block;
+}
+.page-about .backstory--copy {
+  width: 45%;
+  padding: 3rem 3rem 5rem 0rem;
+}
+.page-about .contact {
+  width: 60%;
+  padding: 5rem;
+  background-color: #567DAC;
+  border-radius: 97px 97px 0 0;
+  margin: 0 auto;
+}
+.page-about .contact h2 {
+  text-align: center;
+  width: 60%;
+  margin: 5rem auto;
+}
+.page-about .contact label {
+  text-align: left;
+  display: block;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+.page-about .contact input[type=text],
+.page-about .contact input[type=email],
+.page-about .contact textarea {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-bottom: 2.5rem;
+  color: #141212;
+}
+.page-about .contact button[type=submit] {
+  background-color: transparent;
+  color: #FCF6F5;
+  border: none;
+  padding: 1.5rem 5rem;
+  border-radius: 47px;
+  border: 5px solid #FCF6F5;
+  cursor: pointer;
+}
+.page-about .contact button[type=submit]:hover {
+  background-color: #FCF6F5;
+  color: #567DAC;
+}
+
+.page-careers .hero {
+  display: flex;
+  position: relative;
+  justify-items: center;
+  padding-left: 15rem;
+}
+.page-careers .hero--content {
+  width: 70%;
+  position: absolute;
+  padding-left: 10rem;
+}
+.page-careers .hero--content h1 {
+  margin-top: 4rem;
+  margin-left: 35rem;
+  width: 70%;
+  text-align: left;
+}
+.page-careers .content {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+.page-careers img {
+  max-width: 100%;
+}
+.page-careers .content .content-overlay {
+  background: #567DAC;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 0.4s ease-in-out 0s;
+}
+.page-careers .content:hover .content-overlay {
+  opacity: 0.6;
+}
+.page-careers .content-details {
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  left: 25%;
+  right: 25%;
+}
+
+.page-inspiration .hero {
+  padding-left: 5rem;
+}
+.page-inspiration .hero h1, .page-inspiration .hero p {
+  width: 70%;
+  text-align: left;
+  margin-left: 0;
+}
+.page-inspiration .tech {
+  background-color: #2DC0CF;
+}
+.page-inspiration .science {
+  background-color: #115EA7;
+}
+.page-inspiration .science p, .page-inspiration .science h2 {
+  text-align: right;
+}
+.page-inspiration .math {
+  background-color: #EB3590;
+}
+.page-inspiration .person a {
+  cursor: pointer;
+}
+.page-inspiration .person a:hover {
+  opacity: 0.9%;
+}
+.page-inspiration .person--item {
+  display: flex;
+  justify-content: space-between;
+  justify-items: flex-end;
+  padding: 9.6rem;
+  padding-bottom: 0;
+}
+.page-inspiration .person--item .image {
+  width: 35%;
+}
+.page-inspiration .person--item img {
+  margin-top: 3.5rem;
+  height: auto;
+  max-width: 100%;
+}
+.page-inspiration .person--item h2 {
+  color: #141212;
+  margin-top: 1rem;
+}
+.page-inspiration .person--item .h3, .page-inspiration .person--item p {
+  color: #141212;
+  line-height: 3rem;
+  margin-bottom: 1rem;
+}
+.page-inspiration .person--content {
+  width: 60%;
+  margin-top: 4rem;
+}
+
+.page-resources .hero .subtitle {
+  width: 60%;
+}
+.page-resources .upcoming-events {
+  width: 70%;
+  background-color: #388BBC;
+  margin-top: 20rem;
+  padding: 5.1rem 18rem 5rem 6rem;
+  border-radius: 89px;
+  position: relative;
+  top: 20%;
+  right: -15%;
+  float: right;
+  box-shadow: 0px 4px 32px 14px rgba(0, 0, 0, 0.25);
+}
+.page-resources .upcoming-events h2 {
+  text-align: right;
+}
+.page-resources .upcoming-events .events--list__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 2rem;
+}
+.page-resources .upcoming-events .events--list__date {
+  font-weight: 800;
+  font-size: 4rem;
+  line-height: 5rem;
+  text-align: right;
+  text-transform: uppercase;
+  width: 25%;
+  margin-bottom: 0;
+}
+.page-resources .upcoming-events .events--list--info {
+  width: 70%;
+}
+.page-resources .upcoming-events .events--list--info p {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+.page-resources .upcoming-events .events--list--info strong {
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+.page-resources .upcoming-events .events--list--info .location {
+  font-style: italic;
+  margin-bottom: 1.6rem;
+}
+.page-resources .community {
+  width: 40%;
+  float: right;
+  margin: 4rem 7rem 2rem 5rem;
+  padding: 5rem 4rem;
+  background-color: #CD5B9C;
+  border-radius: 89px;
+  box-shadow: 0px 4px 32px 14px rgba(0, 0, 0, 0.25);
+}
+.page-resources .helpful-links {
+  background-color: #FCF6F5;
+  border-radius: 97px 97px 0px 0px;
+  width: 70%;
+  margin-left: 2rem;
+  padding: 5rem 6rem 5rem 2rem;
+  z-index: 2;
+}
+.page-resources .helpful-links h2, .page-resources .helpful-links h3, .page-resources .helpful-links h4, .page-resources .helpful-links p, .page-resources .helpful-links a {
+  color: #141212;
+}
+.page-resources .helpful-links h2 {
+  margin-left: 3rem;
+}
+.page-resources .helpful-links--science, .page-resources .helpful-links--tech, .page-resources .helpful-links--engineering, .page-resources .helpful-links--math {
+  display: flex;
+  align-items: center;
+}
+.page-resources .helpful-links--science h3, .page-resources .helpful-links--tech h3, .page-resources .helpful-links--engineering h3, .page-resources .helpful-links--math h3 {
+  writing-mode: tb-rl;
+  transform: rotate(-180deg);
+}
+.page-resources .helpful-links--science ul, .page-resources .helpful-links--tech ul, .page-resources .helpful-links--engineering ul, .page-resources .helpful-links--math ul {
+  list-style-type: disc;
+}
+.page-resources .helpful-links--other {
+  width: 50%;
+  margin-left: 8rem;
+}
+.page-resources .scholarships {
+  z-index: 3;
+  padding: 15rem 10rem 10em;
+  background-color: #388BBC;
+}
+.page-resources .scholarships h2 {
+  text-align: center;
+}
+.page-resources .scholarships ul {
+  display: flex;
+  justify-content: space-between;
+}
+.page-resources .scholarships ul li {
+  width: 23%;
+}
+
+.page-career button {
+  color: #141212;
+  background-color: #FCF6F5;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 4.7rem;
+}
+.page-career button:hover {
+  transition: all 0.2s;
+}
+.page-career button:hover:hover {
+  background-color: transparent;
+  color: #FCF6F5;
+  border: 5px solid #FCF6F5;
+  transition: all 0.2s;
+}
+.page-career .blue {
+  background-color: #388BBC;
+}
+.page-career .blue button {
+  color: #388BBC;
+}
+.page-career .pink {
+  background-color: #CD5B9C;
+}
+.page-career .pink button {
+  color: #CD5B9C;
+}
+.page-career .purple {
+  background-color: #A867C7;
+}
+.page-career .purple button {
+  color: #A867C7;
+}
+.page-career .career {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem 6rem;
+  justify-content: space-between;
+}
+.page-career .career h2 {
+  margin-top: 0;
+}
+.page-career .career h3 {
+  margin-top: 5rem;
+}
+.page-career .career--intro, .page-career .career--requirements, .page-career .career--video, .page-career .career--majors {
+  width: 45%;
+}
+.page-career .career .list {
+  margin-left: 2rem;
+  list-style-type: disc;
+}
+.page-career .career .video {
+  padding: 2rem;
+}
+
+.page-inspo .hero {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5rem;
+  background: linear-gradient(357.81deg, #141212 30.18%, #CD5B9C 57.97%);
+}
+.page-inspo .hero--copy {
+  margin-top: 15rem;
+  width: 45%;
+}
+.page-inspo .hero--copy h1, .page-inspo .hero--copy p.subtitle {
+  width: 100%;
+  text-align: left;
+  margin-left: 2rem;
+}
+.page-inspo .hero--image {
+  width: 45%;
+}
+.page-inspo .hero img {
+  max-width: 100%;
+}
+.page-inspo .bio {
+  width: 85%;
+  margin: 0 auto;
+}
+.page-inspo .bio h2 {
+  color: #388BBC;
+}
+.page-inspo .bio--copy {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+.page-inspo .bio p {
+  width: 45%;
+  margin: 1rem auto;
+}
+.page-inspo .bio button {
+  display: inline;
+  background-color: #567DAC;
+  width: 50%;
+  margin: 2rem 20rem;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0 auto;
+  background: #141212;
+}
+
+* {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+.page {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+nav {
+  background-color: #CD5B9C;
+  padding: 1rem;
+}
+nav img {
+  display: block;
+  width: 15%;
+  margin: 0 auto;
+}
+nav .navbar-nav {
+  list-style: none;
+  width: 70%;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+nav .navbar-nav .nav-item {
+  position: relative;
+}
+nav .navbar-nav .nav-item a {
+  padding: 1rem 2rem;
+  transition: all 0.2s;
+}
+nav .navbar-nav .nav-item a:hover, nav .navbar-nav .nav-item a.active {
+  border-bottom: 3px solid #FCF6F5;
+}
+nav .navbar-nav .nav-item .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #567DAC;
+  padding: 10px;
+  display: none;
+}
+nav .navbar-nav .nav-item .dropdown-menu .dropdown-item a {
+  display: block;
+  padding: 5px 0;
+  transition: all 0.2s;
+}
+nav .navbar-nav .nav-item .dropdown-menu .dropdown-item a.active {
+  border-bottom: none;
+}
+nav .navbar-nav .nav-item:hover .dropdown-menu {
+  display: block;
+}
+
+main {
+  margin: 0 3rem;
+}
+
+footer {
+  width: 50%;
+  margin: 0 auto;
+  padding: 3rem 10rem;
+}
+footer .logo {
+  width: 50%;
+}
+footer img {
+  display: block;
+  margin: 0 auto;
+}
+footer ul {
+  margin: 1.5rem auto;
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+a {
+  cursor: pointer;
+}
+
+button {
+  line-height: 3rem;
+  padding: 1.3rem 2rem;
+  border-radius: 4.7rem;
+  text-transform: lowercase;
+  border: transparent;
+}
+
+.dot {
+  background: #388BBC;
+  border-radius: 50%;
+  padding: 109px;
+}
+.dot__pink {
+  background: #CD5B9C;
+}
+.dot__blue {
+  background: #388BBC;
+}
+
+ul {
+  list-style-type: none;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}/*# sourceMappingURL=main.css.map */

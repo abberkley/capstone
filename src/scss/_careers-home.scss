@@ -1,0 +1,61 @@
+.page-careers {
+    
+    .hero {
+        display: flex;
+        position: relative;
+        justify-items: center;
+        padding-left: 15rem;
+    }
+
+    .hero--content {
+        width: 70%;
+        position: absolute;
+        padding-left: 10rem;
+        
+        h1 {
+            margin-top: 4rem;
+            margin-left: 35rem;
+            width: 70%;
+            text-align: left;
+        }
+    }
+
+    .content {
+        position: relative;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    img {
+        max-width: 100%;
+    }
+    
+
+    .content .content-overlay {
+        background: $color-hyperlink;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        -webkit-transition: all 0.4s ease-in-out 0s;
+        -moz-transition: all 0.4s ease-in-out 0s;
+        transition: all 0.4s ease-in-out 0s;
+      }
+      
+      .content:hover .content-overlay{
+        opacity: .6;
+      }
+      
+      .content-details {
+        position: absolute;
+        text-align: center;
+        top: 40%;
+        left: 25%;
+        right: 25%;
+      }
+
+}

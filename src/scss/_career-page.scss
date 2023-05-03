@@ -1,0 +1,75 @@
+.page-career {
+    
+    button {
+        color: $color-black;
+        background-color: $color-white;
+        margin-top: 2rem;
+        padding: 1rem 2rem;
+        border-radius: 4.7rem;
+
+        &:hover {
+            transition: all 0.2s;
+            
+            &:hover {
+                background-color: transparent;
+                color: $color-white;
+                border: 5px solid $color-white;
+                transition: all 0.2s;
+            }
+
+        }
+    }
+
+    .blue {
+        background-color: $color-secondary;
+       
+        button {
+            color: $color-secondary;
+
+        }
+    }
+    .pink {
+        background-color: $color-primary;
+
+        button {
+            color: $color-primary;
+        }
+    }
+    .purple {
+        background-color: $color-accent;
+
+        button {
+            color: $color-accent;
+        }
+    }
+
+    .career {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 3rem 6rem;
+        justify-content: space-between;
+
+        h2 {
+            margin-top: 0;
+        }
+
+        h3 {
+            margin-top: 5rem;
+        }
+
+
+        &--intro, &--requirements, &--video, &--majors {
+            width: 45%;
+        }
+
+        .list {
+            margin-left: 2rem;
+            list-style-type: disc;
+        }
+
+        .video {
+            padding: 2rem;
+        }
+
+    }
+}

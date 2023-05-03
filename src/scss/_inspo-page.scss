@@ -1,0 +1,61 @@
+.page-inspo {
+    .hero {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 5rem;
+
+        background: linear-gradient(357.81deg, #141212 30.18%, #CD5B9C 57.97%);
+        
+
+        &--copy {
+            margin-top: 15rem;
+            width: 45%;
+            
+            h1, p.subtitle {
+                width: 100%;
+                text-align: left;
+                margin-left: 2rem;
+            }
+        }
+
+        &--image {
+            width: 45%;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+    }
+
+   .bio {
+        width: 85%;
+        margin: 0 auto;
+
+        h2 {
+            color: $color-secondary;
+        }
+
+        &--copy {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 4rem;
+        }
+
+        p {
+            width: 45%;
+            margin: 1rem auto;
+        }
+
+        button {
+            display: inline;
+            background-color: $color-hyperlink;
+            width: 50%;
+            margin: 2rem 20rem;
+        }
+    
+
+   }
+
+    
+}
