@@ -81,6 +81,20 @@
         margin-bottom: 5rem;
     }
 
+    a {
+        button {
+            background-color: $color-hyperlink;
+        }
+
+        button:hover {
+            background: transparent;
+            border: 5px solid $color-hyperlink;
+            color: $color-hyperlink;
+        }
+
+    }
+
+
 }
 
 .resources {

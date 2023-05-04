@@ -7,61 +7,90 @@
     <title>STEM Career Quiz</title>
 </head>
 <body>
-  <nav class="navbar">
-    <a href="index.html"><img src="src/img/website-logo.svg" alt=""></a>
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a href="index.html">Home</a>
-      </li>
-      <li class="nav-item">
-        <a href="about.html">About</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a href="careers-home.html" class="dropdown-toggle">Careers</a>
-        <ul class="dropdown-menu">
-          <li class="dropdown-item">
-            <a href="career-docs/career-science.html">Science</a>
+  <div class="page page-quiz">
+    <header>
+      <nav class="navbar">
+        <a href="index.html"><img src="src/img/website-logo.svg" alt=""></a>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="index.html">Home</a>
           </li>
-          <li class="dropdown-item">
-            <a href="career-docs/career-tech.html">Technology</a>
+          <li class="nav-item">
+            <a href="about.html">About</a>
           </li>
-          <li class="dropdown-item">
-            <a href="career-docs/career-engineering.html">Engineering</a>
+          <li class="nav-item dropdown">
+            <a href="careers-home.html" class="dropdown-toggle">Careers</a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item">
+                <a href="career-docs/career-science.html">Science</a>
+              </li>
+              <li class="dropdown-item">
+                <a href="career-docs/career-tech.html">Technology</a>
+              </li>
+              <li class="dropdown-item">
+                <a href="career-docs/career-engineering.html">Engineering</a>
+              </li>
+              <li class="dropdown-item">
+                <a href="career-docs/career-math.html">Mathematics</a>
+              </li>
+            </ul>
           </li>
-          <li class="dropdown-item">
-            <a href="career-docs/career-math.html">Mathematics</a>
+          <li class="nav-item">
+            <a href="resources.html">Resources</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="inspiration-home.html" class="dropdown-toggle">Inspiration</a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item">
+                <a href="inspo-docs/rosalind-franklin.html">Science</a>
+              </li>
+              <li class="dropdown-item">
+                <a href="inspo-docs/elizabeth-fienler.html">Technology</a>
+              </li>
+              <li class="dropdown-item">
+                <a href="inspo-docs/katherine-johnson.html">Math</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="quiz.html">Quiz</a>
           </li>
         </ul>
-      </li>
-      <li class="nav-item">
-        <a href="resources.html">Resources</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a href="inspiration-home.html" class="dropdown-toggle">Inspiration</a>
-        <ul class="dropdown-menu">
-          <li class="dropdown-item">
-            <a href="inspo-docs/rosalind-franklin.html">Science</a>
-          </li>
-          <li class="dropdown-item">
-            <a href="inspo-docs/elizabeth-fienler.html">Technology</a>
-          </li>
-          <li class="dropdown-item">
-            <a href="inspo-docs/katherine-johnson.html">Math</a>
-          </li>
-        </ul>
-      </li>
-      <li class="nav-item">
-        <a href="quiz.html">Quiz</a>
-      </li>
-    </ul>
-  </nav>
-    <footer>
-        <img src="src/img/website-logo.svg" alt="Catalyst Initative Logo" class="logo">
-        <ul class="footer-links">
-            <li class="footer-links--item"><img src="src/img/facebook-icon.svg" alt="facebook"></li>
-            <li class="footer-links--item"><img src="src/img/twitter-icon.svg" alt="twitter"></li>
-            <li class="footer-links--item"><img src="src/img/instagram-icon.svg" alt="instagram"></li>
-        </ul>
-    </footer>
-</body>
+      </nav>
+      <div class="hero">
+        <h1>Career Quiz</h1>
+        <p class="subtitle">Unsure of what you want to do in the future? Try our quiz, which will point you towards an unusual career and a point of study!</p>
+      </div>
+    </header>
+    <main>
+      <div id="quiz-container">
+        <button id="start-button">Start Quiz</button>
+        <div id="question-container" class="hide">
+          <h2 id="question"></h2>
+          <div id="answer-buttons" class="btn-grid">
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+          </div>
+        </div>
+        <div id="results-container" class="hide">
+          <h2 id="results">Here are your results:</h2>
+          <p id="results-text"></p>
+          <button id="results-button" class="btn hide">Learn more</button>
+        </div>
+      </div>
+    </main>
+      <footer>
+          <img src="src/img/website-logo.svg" alt="Catalyst Initative Logo" class="logo">
+          <ul class="footer-links">
+              <li class="footer-links--item"><img src="src/img/facebook-icon.svg" alt="facebook"></li>
+              <li class="footer-links--item"><img src="src/img/twitter-icon.svg" alt="twitter"></li>
+              <li class="footer-links--item"><img src="src/img/instagram-icon.svg" alt="instagram"></li>
+          </ul>
+      </footer>
+    </body>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="src/js/quiz.js"></script>
 </html>

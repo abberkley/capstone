@@ -1,0 +1,64 @@
+.page-quiz {
+    .hide {
+        display: none !important; 
+    }
+
+    button, .btn {
+        background-color: $color-hyperlink;
+    }
+
+    #start-button {
+        width: 25%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    #quiz-container {
+        margin: 15rem auto;
+    }
+
+    #question-container, #results-container {
+        background-color: $color-accent;
+        padding: 3rem;
+        border-radius: 97px;
+        width: 50%;
+        margin: 0 auto;
+
+        h2 {
+            text-align: center;
+        }
+
+        .btn-grid {
+            width: 75%;
+            margin: 0 auto;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 5px 1.5rem;
+            background-color: transparent;
+            border: 5px solid $color-white;
+            display: block;
+            margin-bottom: 2rem;
+        }
+
+        .btn:active {
+            background-color: $color-white;
+            border: none;
+            color: $color-accent;
+        }
+
+        #results-text {
+            width: 50%;
+            margin: 2rem auto;
+        }
+        
+        #results-button {
+            margin: 4rem auto;
+            width: 50%;
+            
+        }
+        
+    }
+
+}

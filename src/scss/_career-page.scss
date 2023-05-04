@@ -22,32 +22,30 @@
 
     .blue {
         background-color: $color-secondary;
-       
-        button {
-            color: $color-secondary;
+        transition: all 0.2s;
 
-        }
-    }
-    .pink {
-        background-color: $color-primary;
-
-        button {
-            color: $color-primary;
-        }
-    }
-    .purple {
-        background-color: $color-accent;
-
-        button {
-            color: $color-accent;
-        }
     }
 
     .career {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 3rem 6rem;
-        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+        padding: 3rem;
+        border-radius: 97px 97px 0 0;
+
+        &--intro {
+            h2 {
+                text-align: center;
+            }
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        &--details {
+            display: flex;
+            justify-content: space-between;
+            width: 70%;
+            margin: 0 auto;
+        }
 
         h2 {
             margin-top: 0;
@@ -58,8 +56,8 @@
         }
 
 
-        &--intro, &--requirements, &--video, &--majors {
-            width: 45%;
+        &--requirements &--majors {
+            width: 40%;
         }
 
         .list {

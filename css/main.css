@@ -127,6 +127,14 @@ h4 {
 .quiz-cta h2 {
   margin-bottom: 5rem;
 }
+.quiz-cta a button {
+  background-color: #567DAC;
+}
+.quiz-cta a button:hover {
+  background: transparent;
+  border: 5px solid #567DAC;
+  color: #567DAC;
+}
 
 .resources {
   background: #A867C7;
@@ -483,6 +491,56 @@ h4 {
   width: 23%;
 }
 
+.page-quiz .hide {
+  display: none !important;
+}
+.page-quiz button, .page-quiz .btn {
+  background-color: #567DAC;
+}
+.page-quiz #start-button {
+  width: 25%;
+  margin: 0 auto;
+  display: block;
+}
+.page-quiz #quiz-container {
+  margin: 15rem auto;
+}
+.page-quiz #question-container, .page-quiz #results-container {
+  background-color: #A867C7;
+  padding: 3rem;
+  border-radius: 97px;
+  width: 50%;
+  margin: 0 auto;
+}
+.page-quiz #question-container h2, .page-quiz #results-container h2 {
+  text-align: center;
+}
+.page-quiz #question-container .btn-grid, .page-quiz #results-container .btn-grid {
+  width: 75%;
+  margin: 0 auto;
+}
+.page-quiz #question-container .btn, .page-quiz #results-container .btn {
+  width: 100%;
+  padding: 5px 1.5rem;
+  background-color: transparent;
+  border: 5px solid #FCF6F5;
+  display: block;
+  margin-bottom: 2rem;
+}
+.page-quiz #question-container .btn:active, .page-quiz #results-container .btn:active {
+  background-color: #FCF6F5;
+  border: none;
+  color: #A867C7;
+}
+.page-quiz #question-container #results-text, .page-quiz #results-container #results-text {
+  width: 50%;
+  margin: 2rem auto;
+}
+.page-quiz #question-container #results-button, .page-quiz #results-container #results-button {
+  margin: 4rem auto;
+  width: 50%;
+}
+
 .page-career button {
   color: #141212;
   background-color: #FCF6F5;
@@ -501,27 +559,26 @@ h4 {
 }
 .page-career .blue {
   background-color: #388BBC;
-}
-.page-career .blue button {
-  color: #388BBC;
-}
-.page-career .pink {
-  background-color: #CD5B9C;
-}
-.page-career .pink button {
-  color: #CD5B9C;
-}
-.page-career .purple {
-  background-color: #A867C7;
-}
-.page-career .purple button {
-  color: #A867C7;
+  transition: all 0.2s;
 }
 .page-career .career {
+  width: 80%;
+  margin: 0 auto;
+  padding: 3rem;
+  border-radius: 97px 97px 0 0;
+}
+.page-career .career--intro {
+  width: 50%;
+  margin: 0 auto;
+}
+.page-career .career--intro h2 {
+  text-align: center;
+}
+.page-career .career--details {
   display: flex;
-  flex-wrap: wrap;
-  padding: 3rem 6rem;
   justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
 }
 .page-career .career h2 {
   margin-top: 0;
@@ -529,8 +586,8 @@ h4 {
 .page-career .career h3 {
   margin-top: 5rem;
 }
-.page-career .career--intro, .page-career .career--requirements, .page-career .career--video, .page-career .career--majors {
-  width: 45%;
+.page-career .career--requirements .page-career .career--majors {
+  width: 40%;
 }
 .page-career .career .list {
   margin-left: 2rem;
