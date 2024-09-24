@@ -16,6 +16,7 @@ li {
 
 	@include breakpoint(xxl) {
 		font-size: 3rem;
+		line-height: 3.8rem;
 	}
 
 	@include breakpoint(md, max) {
