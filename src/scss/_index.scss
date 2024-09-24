@@ -1,157 +1,292 @@
-
-
 .hero {
-    background:(linear-gradient(357.81deg, $color-black 10.18%, $color-primary 57.97%));
-    padding-top: 6.9rem;
-    padding-bottom: 11rem;
-    transition: all 0.2s;
+	background: (linear-gradient(357.81deg, $color-black 10.18%, $color-primary 57.97%));
+	padding-top: 6.9rem;
+	padding-bottom: 11rem;
 
-    h1 {
-        width: 50%;
-        margin: 0 auto;
-    }
+	@include breakpoint(lg, max) {
+		padding-top: 3rem;
+		padding-bottom: 15rem;
+	}
 
-    p.subtitle {
-        width: 40%;
-        margin: 3rem auto;
-    }
+	@include breakpoint(xxl) {
+		padding-top: 8rem;
+		padding-bottom: 20rem;
+	}
+
+	h1 {
+		width: 50%;
+		margin: 0 auto;
+
+		@include breakpoint(lg, max) {
+			width: 75%;
+		}
+	}
+
+	p.subtitle {
+		width: 40%;
+		margin: 3rem auto;
+
+		@include breakpoint(lg, max) {
+			width: 68%;
+		}
+	}
 }
 
 .stem-intro {
-    display: flex;
-    justify-content: space-between;
-    margin: 1rem auto 16rem;
+	display: flex;
+	justify-content: space-between;
+	margin: 5rem auto 16rem;
+	width: 80%;
 
-    .stem--content {
-        margin-top: 8rem;
-        width: 40%;
-        margin-left: 9rem;
-    }
+	@include breakpoint(md, max) {
+		flex-direction: column-reverse;
+		width: 100%;
+		align-items: center;
+		margin-top: 0;
+	}
 
-    .stem--decor {
-        width: 40%;
-    }
+	.stem--content {
+		margin-top: 8rem;
+		width: 40%;
+		margin-left: 9rem;
 
-    .dot {
-        position: relative;
-        bottom: 10%;
-        left: 40%;
-        z-index: -1;
-    }
+		@include breakpoint(lg, max) {
+			width: 50%;
+			margin-left: 3rem;
+		}
+
+		@include breakpoint(md, max) {
+			width: 80%;
+			margin-left: 0;
+		}
+	}
+
+	.stem--decor {
+		width: 40%;
+	}
+
+	.dot {
+		position: relative;
+		bottom: 10%;
+		left: -20%;
+		z-index: -1;
+
+		@include breakpoint(lg, max) {
+			left: -50%;
+		}
+
+		@include breakpoint(md, max) {
+			bottom: 70;
+			left: -30%;
+			padding: 8rem;
+		}
+	}
 }
 
 .stem-categories {
-    display: flex;
-    justify-content: space-evenly;
+	display: flex;
+	width: 100%;
+	height: auto;
 
-    h3 {
-        text-align: center;
-    }
+	@include breakpoint(lg, max) {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
 
-    &--science {
-        background-color: $color-science;
-        width: 25%;
-        padding: 25rem 1rem;
-    }
+	h3 {
+		text-align: center;
+	}
 
-    &--tech {
-        background-color: $color-tech;
-        width: 25%;
-        padding: 25rem 1rem;
-    }
+	.column {
+		padding: 25rem 1rem;
+		width: 25%;
 
-    &--engineering {
-        background-color: $color-engineering;
-        width: 25%;
-        padding: 25rem 1rem;
-    }
+		@include breakpoint(lg, max) {
+			padding: 5rem;
+			width: 100%;
+		}
+	}
 
-    &--math {
-        background-color: $color-math;
-        width: 25%;
-        padding: 25rem 1rem;
-    }
+	.panel {
+		display: none;
+		overflow: hidden;
+	}
+
+	.expanded {
+		display: block;
+	}
+
+	&--science {
+		background-color: $color-science;
+	}
+
+	&--tech {
+		background-color: $color-tech;
+	}
+
+	&--engineering {
+		background-color: $color-engineering;
+	}
+
+	&--math {
+		background-color: $color-math;
+	}
 }
 
 .quiz-cta {
-    text-align: center;
-    margin: 13.1rem auto 10.7rem;
+	text-align: center;
+	margin: 20rem auto 20rem;
 
-    h2 {
-        margin-bottom: 5rem;
-    }
+	h2 {
+		margin-bottom: 5rem;
+	}
 
-    a {
-        button {
-            background-color: $color-hyperlink;
-        }
+	a {
+		button {
+			background-color: $color-hyperlink;
+		}
 
-        button:hover {
-            background: transparent;
-            border: 5px solid $color-hyperlink;
-            color: $color-hyperlink;
-        }
-
-    }
-
-
+		button:hover {
+			background: transparent;
+			border: 2px solid $color-hyperlink;
+			color: $color-hyperlink;
+		}
+	}
 }
 
 .resources {
-    background: $color-accent;
-    display: flex;
-    justify-content: space-between;
-    padding: 13.2rem 5rem 22rem;
+	background: $color-accent;
+	padding: 8rem 2rem;
 
+	&--decor {
+		width: 15%;
 
-    &--decor {
-        width: 25%;
+		.dot {
+			position: relative;
+			left: -50%;
 
-        .dot {
-            position: relative;
-            left: 0;
+			&__blue {
+				bottom: -435;
+				padding: 17rem;
+				z-index: 1;
 
-            &__blue {
-                left: -50%;
-                top: -10%;
-                padding: 15rem;
-            }
+				@include breakpoint(lg, max) {
+					bottom: -310;
+					padding: 15rem;
+				}
 
-            &__pink {
-                left: 0%;
+				@include breakpoint(md, max) {
+					bottom: -280;
+					padding: 10rem;
+				}
 
-            }
-        }
-    }
+				@include breakpoint(sm, max) {
+					bottom: -200;
+				}
+			}
 
-    &--content {
-        width: 60%;
+			&__pink {
+				left: -150%;
+				z-index: 3;
 
-        h2 {
-            width: 70%;
-        }
+				@include breakpoint(xl, max) {
+					left: -250%;
+				}
 
-        a {
-            width: 30%;
-            display: flex;
-            justify-content: space-around;
-            justify-items: baseline;
-        }
+				@include breakpoint(lg, max) {
+					left: -200%;
+				}
 
-    }
+				@include breakpoint(sm, max) {
+					left: -150;
+					padding: 8rem;
+				}
+			}
+		}
+	}
 
+	&--content {
+		display: flex;
+		justify-content: space-between;
+		width: 90%;
+		padding-left: 5%;
 
+		@include breakpoint(lg, max) {
+			flex-direction: column;
+			width: 100%;
+			align-items: center;
+		}
+
+		.content--text {
+			width: 57%;
+			padding: 7rem 1rem 4rem;
+
+			@include breakpoint(xl, max) {
+				width: 50%;
+			}
+
+			@include breakpoint(lg, max) {
+				width: 90%;
+			}
+
+			p {
+				margin-bottom: 1rem;
+			}
+
+			a {
+				width: 35%;
+				display: flex;
+				justify-content: space-between;
+				justify-items: center;
+
+				@include breakpoint(xl, max) {
+					width: 45%;
+				}
+
+				@include breakpoint(lg, max) {
+					width: 35%;
+				}
+
+				p {
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		.content--image {
+			width: 40%;
+			z-index: 2;
+
+			@include breakpoint(xl, max) {
+				padding-top: 5rem;
+				width: 45%;
+			}
+
+			@include breakpoint(lg, max) {
+				width: 60%;
+				padding-top: 0rem;
+			}
+
+			img {
+				width: 100%;
+			}
+		}
+	}
 }
 
 .mission {
-    background: $color-primary;
-    text-align: center;
-    padding-top: 8rem;
-    padding-bottom: 10rem;
+	background: $color-primary;
+	text-align: center;
+	padding-top: 8rem;
+	padding-bottom: 10rem;
 
-    p {
-        width: 70%;
-        margin: 0 auto;
-    }
+	p {
+		width: 60%;
+		margin: 0 auto;
+
+		@include breakpoint(xl, max) {
+			width: 65%;
+		}
+	}
 }
-
